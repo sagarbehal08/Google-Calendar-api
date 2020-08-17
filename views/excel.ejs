@@ -1,0 +1,17 @@
+<%-include("partials/header") -%>
+<h1 style="margin-left:60px; margin-top:30px">CONVERT EVENT TO EXCEL</h1>
+<form action="/excel" method="post">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="meeting-time-from">Appointment from:</label>
+        <input type="datetime-local" id="meeting-time-from" class="form-control" name="meetingTimeFrom">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="meeting-time-to">Appointment to:</label>
+        <input type="datetime-local" id="meeting-time-to" class="form-control" name="meetingTimeTo">
+      </div>
+    </div>
+    <button type="submit" class="btn btn-primary btn-lg btn-block">Download Excel For Upcoming Event</button>
+</div>
+  </form>
+<%-include("partials/footer") -%>

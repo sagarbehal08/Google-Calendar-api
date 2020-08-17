@@ -1,0 +1,30 @@
+<%-include("partials/header") -%>
+<h1 style="margin-left:60px; margin-top:30px">ADD EVENT</h1>
+    <form action="/event" method="post">
+        <div class="container">
+          <div class="form-group">
+            <label for="inputTitle">Title</label>
+            <input type="text" class="form-control" id="inputTitle" placeholder="Title" name="title">
+          </div>
+          <div class="form-group">
+            <label for="inputAddress">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" name="location">
+          </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="meeting-time-from">Choose a time for your appointment from:</label>
+            <input type="datetime-local" id="meeting-time-from" class="form-control" name="meetingTimeFrom">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="meeting-time-to">Choose a time for your appointment to:</label>
+            <input type="datetime-local" id="meeting-time-to" class="form-control" name="meetingTimeTo">
+          </div>
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea name="desc" id="description" cols="30" rows="10" placeholder="Enter description" class="form-control"></textarea>
+          </div>
+        <button type="submit" class="btn btn-primary btn-lg btn-block">Book</button>
+    </div>
+      </form>
+<%-include("partials/footer") -%>
